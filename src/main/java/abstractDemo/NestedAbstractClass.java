@@ -19,9 +19,11 @@ class Honda extends Vehicle
 }  
 public class NestedAbstractClass {
 public static void main(String[] args) {
-	Vehicle obj=new Honda();  
-    Honda h=(Honda)obj;  
-    Honda.FourWheller fw=h.new FourWheller();  
-     fw.display();  
+//	Vehicle obj=new Honda();  
+//    Honda h=(Honda)obj;  
+//    Honda.FourWheller fw=h.new FourWheller();  
+//     fw.display();  
+	Honda.FourWheller vehicles=new Honda().new FourWheller();
+	vehicles.display();
 }
 }
